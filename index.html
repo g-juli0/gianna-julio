@@ -20,6 +20,7 @@
             background-color: black;
             color: white;
             font-family: Arial, sans-serif;
+            padding: 10px;
         }
 
         .header {
@@ -41,7 +42,35 @@
             font-weight: bold;
             font-family: Arial, sans-serif;
         }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+      
+        .column {
+            width: 48%;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+      
+        .menu-item {
+            padding: 10px;
+        }
+      
+        .menu-item:hover {
+            background-color: #555;
+        }
+
     </style>
+
 </head>
 <body>
     <div class="header">
@@ -49,6 +78,26 @@
         <h1 class="title">DATABASES</h1>
       </div>
     <img src="../gianna-julio/images/banner.png" alt="A photo of a server room" style="width: 100%; height: auto;">
+
+    <div class="menu">
+        <div class="menu-item">Home</div>
+        <div class="menu-item">About</div>
+        <div class="menu-item">Contact</div>
+      </div>
+
+    <div class = "container">
+        <div class = "column">
+            <h2>DATABASES</h2>
+            <p>This is some example text about databases. This is some example text about databases. This is some example text about databases.</p><br>
+            <p>This is some example text about databases. This is some example text about databases. This is some example text about databases.</p><br>
+        </div>
+        <div class = "column">
+            <h2>DATABASES</h2>
+            <p>This is some example text about databases. This is some example text about databases. This is some example text about databases.</p><br>
+            <p>This is some example text about databases. This is some example text about databases. This is some example text about databases.</p><br>
+        </div>
+    </div>
+
     <h1>DATABASES</h1>
         <p>This is some example text about databases. This is some example text about databases. This is some example text about databases.</p><br>
         <p>This is some example text about databases. This is some example text about databases. This is some example text about databases.</p><br>
