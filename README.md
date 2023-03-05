@@ -1,2 +1,2 @@
 # gianna-julio
-My resume, but in website form!
+Sample Website for CMPT330 Project
