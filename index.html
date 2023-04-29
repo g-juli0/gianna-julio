@@ -90,52 +90,6 @@
             font-size: 24px;
         }
 
-        .popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.5);
-            z-index: 1;
-        }
-
-        .popup-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 300px;
-            height: 200px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        }
-
-        /* CSS to style the login form */
-        input[type="text"],
-        input[type="password"] {
-            padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-            border: none;
-            background-color: #f2f2f2;
-            font-size: 16px;
-            align-items: center;
-        }
-
-        input[type="submit"] {
-            padding: 10px;
-            margin: 10px;
-            border-radius: 5px;
-            border: none;
-            background-color: hotpink;
-            color: black;
-            font-size: 16px;
-        }
-
         .highlight {
             /* highlight colors - removed in project 2
             background-color: green;
@@ -176,26 +130,10 @@
         <div class="menu-item">About Our Company</div>
         <div class="menu-item">Contact Us</div>
         <!-- no links in navigation bar - fixed in project 2
-    <div class="menu-item"><a href="https://www.example.com">Buy a Small Business Database Here!</a></div>
-    <div class="menu-item"><a href="https://www.example.com">Buy a Large Scale Database Here!</a></div> -->
+        <div class="menu-item"><a href="https://www.example.com">Buy a Small Business Database Here!</a></div>
+        <div class="menu-item"><a href="https://www.example.com">Buy a Large Scale Database Here!</a></div> -->
         <div class="menu-item">News</div>
-        
-
-        <button onclick="document.getElementById('login-popup').style.display='block'">Login</button>
-        <div id="login-popup" class="popup">
-            <div class="popup-content">
-                <div class="menu-item">Buy Databases</div>
-                <form>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                    <input type="submit" value="Login">
-                    <button onclick="document.getElementById('login-popup').style.display='none'">Close</button>
-                </form>
-            </div>
-        </div>
-
+        <div class="menu-item">Buy Databases</div>
         <button class="button" onclick="increaseTextSize()">Increase Text Size</button>
     </div> <!-- navigation alignment - fixed in project 2 -->
 
