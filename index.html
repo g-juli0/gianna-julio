@@ -81,9 +81,14 @@
             margin: 4px 2px;
             cursor: pointer;
         }
+
             .button:hover {
                 background-color: #555;
             }
+
+        .larger-text {
+            font-size: 24px;
+        }
 
         .highlight {
             /* highlight colors - removed in project 2
@@ -99,12 +104,24 @@
         }
     </style>
 
+    <script>
+      function increaseTextSize() {
+        // Get all the elements with the "body" tag name
+        var elements = document.getElementsByTagName("body");
+
+        // Increase the font size for each element
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].classList.toggle("larger-text");
+        }
+      }
+    </script>
+
 </head>
 <body>
     <div class="header">
         <img src="../gianna-julio/images/logo.png" alt="Logo" class="logo">
         <h1 class="title">DATABASES</h1>
-      </div>
+    </div>
     <!-- banner taking up too much space - fixed in project 2 -->
     <img src="../gianna-julio/images/banner.png" alt="A photo of a server room" style="width: 100%; height: 250px;">
 
@@ -119,13 +136,15 @@
         <div class="menu-item">Buy Databases</div>
     </div> <!-- navigation alignment - fixed in project 2 -->
 
-    <div class = "container">
-        <div class = "column">
+    <button class="button" onclick="increaseTextSize()">Increase Text Size</button>
+
+    <div class="container">
+        <div class="column">
             <h2>DATABASES</h2>
             <p>This is some example text about databases. This is some example text about databases. This is some example text about databases.</p><br>
             <p>This is some example text about databases. This is some example text about databases. This is some example text about databases.</p><br>
         </div>
-        <div class = "column">
+        <div class="column">
             <h2>DATABASES</h2>
             <p>This is some example text about databases. This is some example text about databases. This is some example text about databases.</p><br>
             <p>This is some example text about databases. This is some example text about databases. This is some example text about databases.</p><br>
@@ -138,9 +157,9 @@
 
     <br>
 
-    <h1 class = "highlight">SALE</h1>
+    <h1 class="highlight">SALE</h1>
     <p>Grand opening deal - 25% off all first database orders!</p>
-    <p class = "link"><a href="https://www.example.com">See all available sale items</a></p>
+    <p class="link"><a href="https://www.example.com">See all available sale items</a></p>
 
     <br>
 
@@ -157,10 +176,9 @@
         <div class = "column"><img src="../gianna-julio/images/img3.jpg" alt="Infographic of different databases" class="image"></div>
     </div>
     -->
-    
     <!-- no filler text - fixed in project 2
     <h3>Thank you for visiting our site!</h3>
-      
+
     <h1>Gianna Julio</h1>-->
 </body>
 </html>
