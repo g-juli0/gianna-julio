@@ -123,6 +123,7 @@
             border: none;
             background-color: #f2f2f2;
             font-size: 16px;
+            align-items: center;
         }
 
         input[type="submit"] {
@@ -130,8 +131,8 @@
             margin: 10px;
             border-radius: 5px;
             border: none;
-            background-color: #4CAF50;
-            color: white;
+            background-color: hotpink;
+            color: black;
             font-size: 16px;
         }
 
@@ -178,20 +179,20 @@
     <div class="menu-item"><a href="https://www.example.com">Buy a Small Business Database Here!</a></div>
     <div class="menu-item"><a href="https://www.example.com">Buy a Large Scale Database Here!</a></div> -->
         <div class="menu-item">News</div>
-        <div class="menu-item">Buy Databases</div>
+        
 
         <button onclick="document.getElementById('login-popup').style.display='block'">Login</button>
         <div id="login-popup" class="popup">
             <div class="popup-content">
-                <h2>Login</h2>
+                <div class="menu-item">Buy Databases</div>
                 <form>
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required>
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
                     <input type="submit" value="Login">
+                    <button onclick="document.getElementById('login-popup').style.display='none'">Close</button>
                 </form>
-                <button onclick="document.getElementById('login-popup').style.display='none'">Close</button>
             </div>
         </div>
 
