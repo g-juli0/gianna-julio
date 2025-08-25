@@ -76,3 +76,25 @@ body {
 .larger-text {
     font-size: 24px;
 }
+
+splash {
+    margin: 0;
+    padding: 0;
+    background-color: slategray;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.splash-container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+splash-h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em
+}
